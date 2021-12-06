@@ -1,0 +1,296 @@
+@font-face {
+    font-family: Lemonada;
+    src: url('../fonts/Lemonada/Lemonada-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf');
+}
+
+body, html, ul, li, h1, h2, h3, h4, h5, h6 {
+    margin: 0%;
+    padding: 0%;
+}
+/* NAV */
+nav{
+    z-index: 2;
+    margin-top: 30px;
+    width: 100%;
+    position: fixed;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+}
+nav ul li{
+    width: 25%;
+}
+nav ul li a.active{
+    background-color: #008036;
+}
+nav ul li a{
+    font-family: Roboto;
+    text-decoration: none;
+    width: 90%;
+    background-color: #5271FE;
+    padding: 5%;
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+}
+
+/* Section portada */
+#portada{
+    top: 0px;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    height:100vh;
+}
+#portada h1, #portada h2{
+    font-family: lemonada;
+    color: white;
+    text-align: center;
+}
+#portada h1{
+    padding-top: 15%;
+    font-size: 60px;
+}
+#portada h2{
+    font-size: 40px;
+    margin-top: 5%;
+}
+.info_portada{
+    text-align: center;
+    margin-top: 8%;
+    width: 100%;
+    display: flex;
+}
+.info_portada div{
+    padding: 5% 10%;
+}
+.info_portada div h3{
+    color: gray;
+    font-family: Roboto;
+}
+
+
+/* Section calendario */
+#calendario{
+    background-color: #FFBD58;
+    height:100vh;
+}
+#general_calendario{
+    display: flex;
+}
+#general_calendario > div{
+    padding-top: 15%;
+    width: 50%;
+}
+#date_calendario{
+    padding: 5%;
+    text-align: center;
+}
+#date_calendario h2{
+    font-family: Lemonada;
+    font-size: 35px;
+    padding-bottom: 5%;
+}
+#date_calendario table{
+    width: 100%;
+    font-size: 25px;
+    border-spacing: 0px;
+
+    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 2px 3px 16px 10px rgba(0,0,0,0.5); 
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 2px 3px 16px 10px rgba(0,0,0,0.5);
+}
+#date_calendario table thead{
+    background-color: red;
+    color: white;
+}
+#date_calendario table thead th{
+    padding: 5px;
+}
+#date_calendario table tbody td{
+    padding: 1%;
+}
+#date_calendario table tbody td.active{
+    background-color: greenyellow;
+}
+#date_calendario table tbody td:hover{
+    background-color: white;
+}
+#download_calendario{
+    padding: 5%;
+    text-align: center;
+}
+#download_calendario a{
+    font-family: Lemonada;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Section Foros */
+
+#foros{
+    background-color: #FF904D;
+    height:100vh;
+}
+#foros ul{
+    padding-top: 5%;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+#foros img{
+    width: 200px;
+    height: 200px;
+}
+#foros .img_list_first{
+    width: 33%;
+}
+#foros .img_list_second{
+    width: 25%;
+}
+#foros p{
+    font-family: Lemonada;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+/* Section recursos */
+#recursos{
+    background-color: #E4DDD5;
+    height: 100vh;
+    display: flex;
+}
+#recursos .div_recursos{
+    padding-top: 5%;
+    padding-left: 2%;
+    width: 50%;
+}
+#recursos .div_recursos h2{
+    font-family: Lemonada;
+    font-size: 30px;
+    font-weight: bold;
+}
+#recursos .div_recursos ol li{
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 2%;
+}
+#recursos .second{
+    text-align: center;
+}
+#recursos .second a{
+    color: red;
+    font-size: 35px;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+
+/* Section Actividades */
+#actividades{
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    height:80vh;
+    display: flex;
+}
+#actividades .actividades_first, #actividades .actividades_second{
+    width: 50%;
+}
+#actividades .actividades_first{
+    padding-top: 5%;
+    padding-left: 2%;
+}
+#actividades .actividades_first h2{
+    font-family: Lemonada;
+    font-size: 30px;
+    font-weight: bold;
+}
+#actividades .actividades_first ul{
+    list-style: none;
+}
+#actividades .actividades_first ul li{
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 2%;
+}
+#actividades .actividades_second{
+    padding-top: 5%;
+    text-align: center;
+}
+#actividades .div_form{
+    margin-left: 25%;
+    width: 50%;
+    border: 3px solid black;
+    padding: 5%;
+}
+#actividades .div_form h3{
+    font-size: 25px;
+    text-decoration: underline;
+    color: red;
+}
+.div_form .form_row{
+    display: flex;
+    padding-top: 2%;
+}
+.div_form .form_row .group{
+    width: 50%;
+}
+.div_form .form_row .left{
+    padding-right: 5%;
+    text-align: right;
+}
+.div_form .form_row .right{
+    text-align: left;
+}
+.div_form label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.div_form input, .div_form textarea{
+    height: 30px;
+    width: 100%;
+    border: 2px solid white;
+    background: transparent;
+}
+.div_form textarea{
+    height: 60px;
+    resize: none;
+}
+.div_form button{
+    background-color: #31C18E;
+    height: 50px;
+    width: 70%;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+
+/* Footer */
+footer{
+    background-color: #FF904D;
+    padding:10px 5%;
+    display: flex;
+}
+footer div{
+    width: 33%;
+}
+footer .center{
+    text-align: center;
+    font-size: 25px;
+}
+footer .center h5{
+    color: white;
+}

@@ -1,0 +1,144 @@
+/* Section Nav */
+@media (max-width: 786px) {
+    nav ul{
+        padding: 5% 2%;
+        display: block;
+        text-align: left;
+        background: #d7d7db8f;
+    }
+    nav ul li {
+        padding: 1.5%;
+    }
+    nav ul li a{
+        border-radius: 0%;
+    }
+}
+
+/* Section portada */
+@media (max-width: 786px) {
+    .info_portada div h3{
+        color: black;
+    }
+    .info_portada p{
+        color: white;
+        font-weight: bold;
+    }
+}
+
+/* Section calendario */
+@media (max-width: 480px){
+    #general_calendario {
+        display: block;
+    }
+    #general_calendario > div {
+        padding-top: 2%;
+        width: 90%;
+    }
+    #date_calendario table thead th {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 786px) {
+    #general_calendario {
+        display: block;
+    }
+    #date_calendario table thead th {
+        font-size: 1.7rem;
+    }
+    #general_calendario > div {
+        padding-top: 2%;
+        width: 90%;
+    }
+}
+
+/* Section Foros */
+@media (min-width: 786px){
+    #foros{
+        height: 70vh;
+    }
+    #foros img {
+        width: 150px;
+        height: 150px;
+    }
+    #foros p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    #foros{
+        height: 50vh;
+    }
+    #foros img {
+        width: 100px;
+        height: 100px;
+    }
+    #foros p{
+        font-size: 15px;
+    }
+}
+
+/* Section recursos */
+@media (max-width: 786px){
+    #recursos{
+        display: block;
+    }
+    #recursos .div_recursos {
+        padding-left: 0%;
+        width: 100%;
+    }
+    #recursos .div_recursos ol li {
+        padding-top: 1%;
+    }
+    iframe{
+        width: 90%;
+        height: 200px;
+    }
+}
+
+/* Section Actividades */
+@media (max-width: 786px){
+    #actividades{
+        height: 60vh;
+    }
+    #actividades .actividades_first ul li {
+        font-size: 25px;
+        padding-top: 5%;
+    }
+
+    #actividades .div_form {
+        margin-left: 5%;
+        width: 80%;
+        padding: 5%;
+    }
+    .div_form .form_row{
+        display: block;
+    }
+    .div_form .form_row .group {
+        width: 100%;
+        text-align: center;
+    }
+    .div_form label {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .div_form input, .div_form textarea {
+        width: 95%;
+    }
+    .div_form button {
+        margin-top: 5%;
+        height: 30px;
+        width: 90%;
+        border-radius: 20px;
+    }
+}
+
+
+/* Section Footer */
+@media (max-width: 786px){
+    footer .center h4{
+        font-size: 20px;
+    }
+    footer .created{
+        text-align: right;
+    }
+}
